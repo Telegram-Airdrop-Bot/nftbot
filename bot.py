@@ -5,6 +5,8 @@ from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filte
 from dotenv import load_dotenv
 from verifier import has_nft
 import json
+import telegram
+print(telegram.__version__)
 
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
